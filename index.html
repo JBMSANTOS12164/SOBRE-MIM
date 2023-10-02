@@ -74,47 +74,7 @@ SANTOS
 </h3>
 
 
-<!------------------------------ Compartilhar -------------------------
-https://acervolima.com/como-usar-a-api-de-compartilhamento-da-web-para-opcoes-de-compartilhamento-nativo-em-html-e-javascript/
--------------------------------------------------------->
-<!DOCTYPE html><html><head><title></title></head>
-  
-<body style="text-align: center;">
-<h1 style="color: green;">Sobre mim</h1>
-<h2>Santos</h2>
-<button id="shareBtn">Compartilhe</button>
-<script>
-document.querySelector('#shareBtn')
-.addEventListener('click', event => {
-  
-            // Fallback, Tries to use API only
-            // if navigator.share function is
-            // available
-            if (navigator.share) {
-                navigator.share({
-  
-                    // Title that occurs over
-                    // web share dialog
-                    title: 'GeeksForGeeks',
-  
-                    // URL to share
-                    url: 'https://jbmsantos12164.github.io/TUDO/'
-                }).then(() => {
-                    console.log('Thanks for sharing!');
-                }).catch(err => {
-  
-                    // Handle errors, if occured
-                    console.log(
-                    "Error while using Web share API:");
-                    console.log(err);
-                });
-            } else {
-  
-                // Alerts user if API not available 
-                alert("Browser doesn't support this API !");
-            }
-        })
-</script></body></html>
+
 <!----------------------------------------------------------->
 <!----------------------------------------------------------->
 <!----------------------------------------------------------->
